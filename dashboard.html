@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dashboard — Cici Mey</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="logo">
+        <img src="img/Freya JKT48.jpeg" alt="logo" class="logo-img">
+        <span class="logo-text">Cici Mey</span>
+      </div>
+
+      <nav class="nav">
+        <a class="nav-item active" href="dashboard.html">Beranda</a>
+        <a class="nav-item" href="#products">Data Produk</a>
+        <a class="nav-item" href="#promo">Promo</a>
+      </nav>
+
+      <div class="nav-right">
+        <div class="search">
+          <input type="search" placeholder="Cari produk..." aria-label="Search">
+          <button class="search-btn" aria-label="Search button"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="profile">
+          <div class="avatar">CM</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container page-grid">
+    <section class="welcome card">
+      <div class="welcome-inner">
+        <h2>Halo, Selamat Datang!</h2>
+        <p>Dashboard singkat stok & promo. Pilih produk atau cek panel admin jika kamu bagian tim.</p>
+        <div class="kpi-grid">
+          <div class="kpi">
+            <h3>120+</h3>
+            <p>Produk</p>
+          </div>
+          <div class="kpi">
+            <h3>35</h3>
+            <p>Transaksi Hari Ini</p>
+          </div>
+          <div class="kpi">
+            <h3>5</h3>
+            <p>Produk Habis</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="card products">
+      <div class="section-header">
+        <h3>Produk Unggulan</h3>
+        <p class="muted">Tepung, Gula, Mentega, Cokelat, Keju & topping</p>
+      </div>
+
+      <div class="cards-grid">
+        <!-- Card 1 -->
+        <article class="product-card">
+          <img src="img/terigu.jpeg" alt="Tepung Terigu">
+          <div class="pc-body">
+            <h4>Tepung Terigu</h4>
+            <p class="price">Rp 10.200 / kg</p>
+            <p class="small">Tepung serbaguna, cocok untuk kue dan roti (bukan whey protein).</p>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="product-card">
+          <img src="img/sugar.jpeg" alt="Gula Pasir">
+          <div class="pc-body">
+            <h4>Gula Pasir</h4>
+            <p class="price">Rp 14.000 / kg</p>
+            <p class="small">Gula kristal halus digiling satu persatu dengan tangan sendiri.</p>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="product-card">
+          <img src="img/mentega.jpeg" alt="Mentega">
+          <div class="pc-body">
+            <h4>Mentega</h4>
+            <p class="price">Rp 50.000 / pack</p>
+            <p class="small">Mentega wisman bosss bukan bandbiru.</p>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="product-card">
+          <img src="img/coklat.jpeg" alt="Cokelat">
+          <div class="pc-body">
+            <h4>Cokelat Block</h4>
+            <p class="price">Rp 15.000 / block</p>
+            <p class="small">Cokelat silverqwen daur ulang.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <aside class="card promo" id="promo">
+      <h3>Iklan & Promo</h3>
+      <p class="muted">Diskon 10% untuk pembelian tepung > 10kg. Gratis konsultasi resep pemula tiap Sabtu.</p>
+      <div class="promo-cta">
+        <a href="#" class="btn-outline">Lihat Detail Promo</a>
+      </div>
+    </aside>
+
+    <section class="card recent">
+      <h3>Stok Terbaru</h3>
+      <ul class="list">
+        <li>Tepung terigu - 20 kg</li>
+        <li>Mentega - 5 pack</li>
+        <li>Cokelat - 12 block</li>
+        <li>Keju parut - 8 pack</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Cici Mey — Toko Bahan Kue • Desain oleh: Kamu</p>
+    </div>
+  </footer>
+</body>
+</html>
